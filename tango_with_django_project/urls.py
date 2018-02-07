@@ -1,5 +1,4 @@
 """tango_with_django_project URL Configuration
-
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.11/topics/http/urls/
 Examples:
@@ -20,6 +19,7 @@ from rango import views
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
+    url(r'^$', views.about, name='about'),
     url(r'^rango/', include('rango.urls')),
     # above maps any URLs starting
     # with rango/ to be handled by
